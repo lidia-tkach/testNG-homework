@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="homework suite" verbose="1">
+    <test name="Smoke tests">
+        <groups>
+            <run>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestGroups"/>
+        </classes>
+    </test>
+    <test name="Test with Parameters">
+        <parameter name="email" value="test@test.com"/>
+        <parameter name="number" value="0985552233"/>
+        <classes>
+            <class name="ParameterizedMethods"/>
+        </classes>
+    </test>
+</suite>
